@@ -1,0 +1,120 @@
+:root {
+    --light: whitesmoke;
+    --text:'Times New Roman', Times, serif; 
+    --dark: rgb(32, 31, 31);
+}
+
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--light);
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 16px;
+    margin-top:10px;
+}
+
+header {
+    padding: 20px;
+    font-family: var(--text);
+    background-color: var(--dark);
+    color: var(--light);
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+header nav  {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--text);
+}
+
+header nav a:hover {
+    color: red;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+.hero {
+    height: 285px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-image: url("./Images/HeroElement.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+aside {
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 32px;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    font-family: var(--text);
+    background-color: var(--dark);
+    color: var(--light)
+}
+
+aside img {
+    display: block;
+    margin: 5px auto;
+    max-width: 200px;
+    flex-wrap: wrap;
+    width: 60%;
+    border: var(--light);
+    border-width: 2px solid;
+
+}
+
+aside h2 {
+    margin-bottom: 10px;
+    text-align: center; 
+    font-size: 16px;
+}
+ 
+aside p {
+    text-align: center;
+    font-size: 12px;
+
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    font-family: var(--text);
+    color: var(--light);
+    padding: 10px;
+    background-color: var(--dark);
+
+}
+
+
+footer ul li {
+    display: inline-flex;
+    list-style: none;
+    padding: 20px;
+}
