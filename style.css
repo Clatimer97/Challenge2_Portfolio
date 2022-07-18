@@ -40,9 +40,9 @@ header nav  {
     font-family: var(--text);
 }
 
+/*added responsive element for nav links for accessibility and decorative purposes*/
 header nav a:hover {
     color: red;
-
 }
 
 header nav ul li {
@@ -61,49 +61,25 @@ header nav ul li {
 }
 
 aside {
-    margin-right: 20px;
-    margin-top: 0px;
-    margin-bottom: 32px;
-    padding: 20px;
-    clear: both;
-    float: left;
-    width: 20%;
-    height: 100%;
-    font-family: var(--text);
-    background-color: var(--dark);
-    color: var(--light)
+    display: flex; 
+    text-align: center;
+    font-family: var(--text)
 }
 
 aside img {
-    display: block;
-    margin: 5px auto;
     max-width: 200px;
-    flex-wrap: wrap;
-    width: 60%;
-    border: var(--light);
 }
 
-aside h2 {
-    margin-bottom: 10px;
-    text-align: center; 
-    font-size: 16px;
-}
- 
-aside p {
-    text-align: center;
-    font-size: 12px;
-
-}
-
+/*created flex box for images and linked content with main element*/
 main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-around;
 }
 
-.Work {
+/*added heading element to flex box so it would flex with the content and not have any strange breaks*/
+.work {
     padding: 15px;
     background-color: var(--dark);
     font-family: var(--text);
@@ -113,6 +89,7 @@ main {
     width:100%;
 }
 
+/*gave first interactive element its own class since it's bigger than the rest*/
 .origin {
     display:flex;
     background-image: url("./Images/Stack.jpg");
@@ -133,10 +110,12 @@ main {
     border-style: solid;
 }
 
+/* reactive hover element for accessibility*/
 .origin-header:hover{
     border-style: dashed;
 }
 
+/*had to individualize each flex box because they all have different images*/
 .LED {
     display:flex;
     background-image: url("./Images/LED.jpg");
@@ -146,8 +125,6 @@ main {
     height: 10em;
     align-items: end;
 }
-
-
 
 .java {
     display:flex;
@@ -182,6 +159,7 @@ main {
     align-items: end;
 }
 
+/*combined all of the other box headers in to one class since they are all the same size and have the same properties*/
 .box-header {
     font-size: 14px;
     font-family: var(--text);
@@ -196,6 +174,7 @@ main {
     border-style: dashed;
 }
 
+/*created a flex box for the footer because I was having issues making it stick to the bottom*/
 footer {
     display: flex;
     justify-content: center;
